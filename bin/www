@@ -7,7 +7,7 @@
 console.log("starting something");
 var app = require('../app');
 console.log("trying to include gloabl file");
-var globalFile = require('../public/javascripts/global.js');
+var globalFile = require('../public/javascripts/global');
 console.log("successfully included global file");
 var debug = require('debug')('hack-zurich-voice-banking:server');
 var http = require('http');
