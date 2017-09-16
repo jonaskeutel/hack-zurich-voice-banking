@@ -4,8 +4,6 @@ var host = location.origin.replace(/^http/, 'ws');
 var websocket = new WebSocket(host);
 
 websocket.onmessage = function(evt) {
-    // $('#messages').append($('<li>').html(evt.data));
-    var content = document.getElementById('alexa');
     try {
         var data = JSON.parse(evt.data);
         $('.page').hide();
@@ -13,7 +11,8 @@ websocket.onmessage = function(evt) {
             case 'splitwise':
                 var percentage = data.percentage;
                 var balance = parseInt($('#albana span')[1].innerHTML);
-                balance -= (balance * percentage / 100).toFixed(2);
+                balance += (42.5 * ((100-percentage) / 100));
+                balance = balance.toFixed(2);
                 $('#albana span')[1].innerHTML = balance;
                 $('#' + data.id).show();
                 break;

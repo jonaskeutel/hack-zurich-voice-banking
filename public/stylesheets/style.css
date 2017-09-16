@@ -1,6 +1,8 @@
-body {
-  padding: 50px;
+body, div {
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: ivory;
 }
 
 a {
@@ -8,46 +10,75 @@ a {
 }
 
 #header {
-    height: 8vh;
+    height: 100px;
+    background-color: white;
 }
 
 #header img {
-    height: 90%;
-    top: 5%;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 100px;
 }
 
 .page {
-    width: 90%;
-    height: 50%;
+    width: 100%;
+    height: calc(100vh - 100px);
     margin: auto;
-    font-size: 300%;
+    font-size: 24pt;
+    /*padding: 5%;*/
     display: none;
 }
 
-#dashboard {
-    background-color: brown;
+#dashboard img {
+    width: 100%;
 }
 
 #dining {
-    background-color: green;
+
 }
 
 #friends {
-    background-color: blue;
+
+}
+
+.friend-balance {
+    border-top: 3px solid grey;
+    background-color: #aaa;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 24px;
+}
+
+.friend-balance ul {
+    list-style: none;
+    line-height: 60px;
+}
+
+.friend-balance ul li span {
+    margin-left: 3em;
+}
+
+.friend-balance img {
+    width: 60px;
+    border-radius: 30px;
+    position: relative;
+    top: 25px;
+    margin-right: 10px;
 }
 
 #splitwise {
-    background-color: red;
+
 }
 
 #overview {
-    background-color: yellow;
+
 }
 
 #invest {
-    background-color: grey;
+
 }
 
 #appointment {
-    background-color: chucknorris;
+
 }

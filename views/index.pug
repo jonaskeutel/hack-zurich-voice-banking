@@ -5,29 +5,40 @@ block content
   //- p Welcome to #{title}
   #header 
     img(src='../images/raiffeisen.png')
-  #alexa The content here should get updated by alexa
-  #dashboard.page Dashboard
+  #dashboard.page 
+    img(src='../images/dashboard.png')
   #dining.page Dining
-  #friends.page Friends
-    ul
-        li#albana 
-            | Albana 
-            span -60
-            | €
-        li#michael 
-            | Michael
-            span -20 
-            | €
-  #splitwise.page Splitwise
-      ul
+  #friends.page 
+    h2 Dining at Casa Amalfi
+    | 16.09.2017, 42,50€
+    .friend-balance
+        ul
             li#albana 
-                | Albana 
+                img(src='../images/albana.png')
+                | Albana
                 span -60
                 | €
             li#michael 
-                | Michael
+                img(src='../images/michi.png')
+                | Michael 
                 span -20 
                 | €
+        //- .splitwise 
+        //-     img(src='../images/splitwise.png')
+        //-     | Your balance among your friends
+  #splitwise.page Splitwise
+      .friend-balance
+          ul
+              li#albana 
+                  img(src='../images/albana.png')
+                  | Albana
+                  span -60
+                  | €
+              li#michael 
+                  img(src='../images/michi.png')
+                  | Michael 
+                  span -20 
+                  | €
   #overview.page Ovierview
   #invest.page Investment
   #appointment.page Appointment
