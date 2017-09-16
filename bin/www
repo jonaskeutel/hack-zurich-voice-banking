@@ -5,9 +5,9 @@
  */
 
 var app = require('../app');
+var global = require('../public/javascripts/global.js');
 var debug = require('debug')('hack-zurich-voice-banking:server');
 var http = require('http');
-var ws = undefined;
 
 /**
  * Get port from environment and store in Express.
@@ -38,14 +38,14 @@ var wss = new WebSocketServer({server: server})
 console.log("websocket server created")
 
 wss.on("connection", function(websocket) {
-    ws = websocket;
+    global.ws = websocket;
   var id = setInterval(function() {
-    ws.send(JSON.stringify(new Date()), function() {  })
+    global.ws.send(JSON.stringify(new Date()), function() {  })
   }, 1000)
 
   console.log("websocket connection open")
 
-  ws.on("close", function() {
+  global.ws.on("close", function() {
     console.log("websocket connection close")
     clearInterval(id)
   })

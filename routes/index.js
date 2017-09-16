@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
-
-var ws = undefined;
+var global = require('../public/javascripts/global.js');
 
 /* GET home page. */
 router.get('/ws', function(req, res, next) {
-  ws.send('called from outside')
+    global.ws.send('called from outside')
 });
 
 router.get('/', function(req, res, next) {
