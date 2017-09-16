@@ -22,7 +22,7 @@ router.get('/ws', function(req, res, next) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Raiffeisen over Voice' });
 });
 
 module.exports = router;

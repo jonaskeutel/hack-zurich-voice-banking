@@ -16,6 +16,11 @@ websocket.onmessage = function(evt) {
                 $('#albana span')[1].innerHTML = balance;
                 $('#' + data.id).show();
                 break;
+            case 'transactions':
+                $('#albana span')[2].innerHTML = $('#albana span')[1].innerHTML;
+                $('#michael span')[2].innerHTML = $('#michael span')[1].innerHTML;
+                $('#' + data.id).show();
+                break;
             default:
                 $('#' + data.id).show();
 

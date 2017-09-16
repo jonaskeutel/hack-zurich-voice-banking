@@ -5,14 +5,15 @@ block content
   //- p Welcome to #{title}
   #header 
     img(src='../images/raiffeisen.png')
+  #login.page Login using your voice pattern
   #dashboard.page 
     img(src='../images/dashboard.png')
   #dining.page 
       h2 Dining at Casa Amalfi
-      | 16.09.2017, 42,50€
+      | 16.09.2017, 42€
   #friends.page 
     h2 Dining at Casa Amalfi
-    | 16.09.2017, 42,50€
+    | 16.09.2017, 42€
     .friend-balance
         ul
             li#albana 
@@ -41,10 +42,22 @@ block content
                   | Michael 
                   span -20 
                   | €
-  #overview.page Ovierview
+  #overview.page Overview
   #invest.page Investment
   #appointment.page Appointment
   #share.page Share
-  #transaction.page Tranasaction
+  #transaction.page Transactions
+      ul
+          li#albana 
+              img(src='../images/albana.png')
+              | Albana
+              span -60
+              | €
+          li#michael 
+              img(src='../images/michi.png')
+              | Michael 
+              span -20 
+              | €
+      | You are settled now
   script(src="/javascripts/jquery-3.2.1.min.js")
   script(src="/javascripts/ws.js")

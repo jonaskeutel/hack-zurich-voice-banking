@@ -29,6 +29,26 @@ a {
     display: none;
 }
 
+#login.page {
+    display: block !important;
+    width: 15em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: #A97D51;
+    position: absolute;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+}
+
 #dashboard img {
     width: 100%;
 }
@@ -50,16 +70,16 @@ a {
     font-size: 24px;
 }
 
-.friend-balance ul {
+ul {
     list-style: none;
     line-height: 60px;
 }
 
-.friend-balance ul li span {
+ul li span {
     margin-left: 3em;
 }
 
-.friend-balance img {
+ul li img {
     width: 60px;
     border-radius: 30px;
     position: relative;
