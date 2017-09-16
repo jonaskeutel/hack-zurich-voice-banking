@@ -4,8 +4,11 @@
  * Module dependencies.
  */
 
+console.log("starting something");
 var app = require('../app');
-var global = require('../public/javascripts/global.js');
+console.log("trying to include gloabl file");
+var globalFile = require('../public/javascripts/global.js');
+console.log("successfully included global file");
 var debug = require('debug')('hack-zurich-voice-banking:server');
 var http = require('http');
 
@@ -38,14 +41,14 @@ var wss = new WebSocketServer({server: server})
 console.log("websocket server created")
 
 wss.on("connection", function(websocket) {
-    global.ws = websocket;
+    globalFile.ws = websocket;
   var id = setInterval(function() {
-    global.ws.send(JSON.stringify(new Date()), function() {  })
+    globalFile.ws.send(JSON.stringify(new Date()), function() {  })
   }, 1000)
 
   console.log("websocket connection open")
 
-  global.ws.on("close", function() {
+  globalFile.ws.on("close", function() {
     console.log("websocket connection close")
     clearInterval(id)
   })
