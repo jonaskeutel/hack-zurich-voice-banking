@@ -30,7 +30,7 @@ a {
 }
 
 #login.page {
-    display: block !important;
+    /*display: block !important;*/
     width: 15em;
     height: 2em;
     line-height: 2em;

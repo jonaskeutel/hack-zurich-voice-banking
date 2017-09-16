@@ -1,6 +1,4 @@
-// var ws = new WebSocket("localhost:8080");
 var host = location.origin.replace(/^http/, 'ws');
-
 var websocket = new WebSocket(host);
 
 websocket.onmessage = function(evt) {
@@ -23,13 +21,10 @@ websocket.onmessage = function(evt) {
                 break;
             default:
                 $('#' + data.id).show();
-
         }
-        // if (data.id) {
-        // } else {
-        //     content.innerHTML = evt.data;
-        // }
     } catch (e) {
         content.innerHTML = evt.data;
     }
 };
+
+setTimeout(function(){$('#login').show();}, 500)
