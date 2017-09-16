@@ -3,11 +3,31 @@ extends layout
 block content
   //- h1= title
   //- p Welcome to #{title}
+  #header 
+    img(src='../images/raiffeisen.png')
   #alexa The content here should get updated by alexa
   #dashboard.page Dashboard
   #dining.page Dining
   #friends.page Friends
+    ul
+        li#albana 
+            | Albana 
+            span -60
+            | €
+        li#michael 
+            | Michael
+            span -20 
+            | €
   #splitwise.page Splitwise
+      ul
+            li#albana 
+                | Albana 
+                span -60
+                | €
+            li#michael 
+                | Michael
+                span -20 
+                | €
   #overview.page Ovierview
   #invest.page Investment
   #appointment.page Appointment

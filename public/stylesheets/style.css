@@ -7,6 +7,15 @@ a {
   color: #00B7FF;
 }
 
+#header {
+    height: 8vh;
+}
+
+#header img {
+    height: 90%;
+    top: 5%;
+}
+
 .page {
     width: 90%;
     height: 50%;
