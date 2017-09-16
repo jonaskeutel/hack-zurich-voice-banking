@@ -2,6 +2,9 @@
 var host = location.origin.replace(/^http/, 'ws');
 console.log(host);
 host = host.replace(/\d+/, "5000");
+if (host.search(/\d/)) {
+    host = host.replace(/.$/,"5000");
+}
 var websocket = new WebSocket(host);
 // var websocket = new WebSocket("ws://hack-zurich-voice-banking.herokuapp.com:8080/");
 
