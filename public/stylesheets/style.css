@@ -6,3 +6,39 @@ body {
 a {
   color: #00B7FF;
 }
+
+.page {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    font-size: 300%;
+    display: none;
+}
+
+#dashboard {
+    background-color: brown;
+}
+
+#dining {
+    background-color: green;
+}
+
+#friends {
+    background-color: blue;
+}
+
+#splitwise {
+    background-color: red;
+}
+
+#overview {
+    background-color: yellow;
+}
+
+#invest {
+    background-color: grey;
+}
+
+#appointment {
+    background-color: chucknorris;
+}
