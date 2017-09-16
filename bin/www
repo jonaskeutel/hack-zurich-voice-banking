@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('hack-zurich-voice-banking:server');
 var http = require('http');
+var ws = undefined;
 
 /**
  * Get port from environment and store in Express.
@@ -28,6 +29,27 @@ console.log("Server created");
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+var WebSocketServer = require("ws").Server
+
+console.log("http server listening on %d", port)
+
+var wss = new WebSocketServer({server: server})
+console.log("websocket server created")
+
+wss.on("connection", function(websocket) {
+    ws = websocket;
+  var id = setInterval(function() {
+    ws.send(JSON.stringify(new Date()), function() {  })
+  }, 1000)
+
+  console.log("websocket connection open")
+
+  ws.on("close", function() {
+    console.log("websocket connection close")
+    clearInterval(id)
+  })
+})
 
 /**
  * Normalize a port into a number, string, or false.
