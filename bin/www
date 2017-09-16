@@ -20,7 +20,7 @@ console.log("Port set, now create server");
  */
 
 var server = http.createServer(app);
-
+console.log("Server created");
 /**
  * Listen on provided port, on all network interfaces.
  */
