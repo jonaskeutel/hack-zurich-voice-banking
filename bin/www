@@ -42,9 +42,9 @@ console.log("websocket server created")
 
 wss.on("connection", function(websocket) {
     globalFile.ws = websocket;
-  var id = setInterval(function() {
+  // var id = setInterval(function() {
     globalFile.ws.send(JSON.stringify(new Date()), function() {  })
-  }, 1000)
+  // }, 1000)
 
   console.log("websocket connection open")
 
