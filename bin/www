@@ -50,7 +50,7 @@ wss.on("connection", function(websocket) {
 
   globalFile.ws.on("close", function() {
     console.log("websocket connection close")
-    clearInterval(id)
+    // clearInterval(id)
   })
 })
 
