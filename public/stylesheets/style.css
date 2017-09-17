@@ -42,9 +42,9 @@ a {
     bottom: 0;
 }
 
-#login.page {
+/*#login.page {*/
     /*display: block !important;*/
-    width: 15em;
+    /*width: 15em;
     height: 10em;
     line-height: 2em;
     vertical-align: middle;
@@ -55,7 +55,7 @@ a {
     right: 0;
     position: absolute;
     text-align: center;
-}
+}*/
 
 /*#login img {
     height: 30%;
