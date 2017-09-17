@@ -2,7 +2,13 @@ body, div {
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: ivory;
+  font-weight: bold;
+  background-color: white;
+  overflow: hidden;
+}
+
+.raiff {
+    color: #E23A28;
 }
 
 a {
@@ -12,12 +18,13 @@ a {
 #header {
     height: 100px;
     background-color: white;
+    border-bottom: 4px solid #E23A28
 }
 
 #header img {
-    height: 70px;
-    margin-top: 15px;
-    margin-left: 100px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 60px;
 }
 
 .page {
@@ -29,24 +36,36 @@ a {
     display: none;
 }
 
+.page img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 #login.page {
     /*display: block !important;*/
     width: 15em;
-    height: 2em;
+    height: 10em;
     line-height: 2em;
     vertical-align: middle;
     margin: auto;
-    top: 0;
+    top: 5em;
     bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 10px;
-    background-color: #A97D51;
     position: absolute;
     text-align: center;
-    -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
-    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+}
+
+#login img {
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+#login .raiff {
+    margin: 5px 0 -10px 0;
 }
 
 #dashboard img {
@@ -89,6 +108,43 @@ ul li img {
 
 #splitwise {
 
+}
+
+#ratio {
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    font-size: 34pt;
+}
+
+.albanaBalance {
+    background: transparent;
+    font-size: 28pt;
+    position: absolute;
+    bottom: 1.2em;
+    right: 6.1em;
+}
+
+.michaelBalance {
+    background: transparent;
+    font-size: 28pt;
+    position: absolute;
+    bottom: 1.2em;
+    left: 13em;
+}
+
+#transaction1 {
+    position: absolute;
+    font-size: 34pt;
+    top: 7em;
+    left: 6em;
+}
+
+#transaction2 {
+    position: absolute;
+    font-size: 34pt;
+    top: 10em;
+    left: 6em;
 }
 
 #overview {
